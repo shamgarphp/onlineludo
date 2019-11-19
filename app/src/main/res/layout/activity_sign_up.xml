@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".activities.SignUpActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.onlineludo.Fonts.HelveticaMediumTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Sign Up"
+                android:textSize="20dp"
+                android:id="@+id/Lable"
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/black"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/Lable"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/usernmLyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/border"
+
+                    >
+
+                    <com.onlineludo.Fonts.HelveticaLightEditText
+                        android:id="@+id/userEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:background="@android:color/transparent"
+                        android:hint="Enter Username"
+                        android:inputType="text"
+                        android:textColor="@android:color/black"
+                        android:textSize="12dp" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/fnameLyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/border"
+
+                    >
+
+                    <com.onlineludo.Fonts.HelveticaLightEditText
+                        android:id="@+id/fnameEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:background="@android:color/transparent"
+                        android:hint="Enter First Name"
+                        android:inputType="text"
+                        android:textColor="@android:color/black"
+                        android:textSize="12dp" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/lastnmLyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/border"
+
+                    >
+
+                    <com.onlineludo.Fonts.HelveticaLightEditText
+                        android:id="@+id/lastnameEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:background="@android:color/transparent"
+                        android:hint="Enter Last Name"
+                        android:inputType="text"
+                        android:textColor="@android:color/black"
+                        android:textSize="12dp" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/emailLyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/border"
+
+                    >
+
+                    <com.onlineludo.Fonts.HelveticaLightEditText
+                        android:id="@+id/emailEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:background="@android:color/transparent"
+                        android:hint="Enter Email id"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@android:color/black"
+                        android:textSize="12dp" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/mobileLyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/border"
+
+                    >
+
+                    <com.onlineludo.Fonts.HelveticaLightEditText
+                        android:id="@+id/mobileEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:background="@android:color/transparent"
+                        android:hint="Enter Mobile Number"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:textColor="@android:color/black"
+                        android:textSize="12dp" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/pwdLyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/usernmLyt"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/border"
+
+                    >
+
+                    <com.onlineludo.Fonts.HelveticaLightEditText
+                        android:id="@+id/pwdEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:background="@android:color/transparent"
+                        android:hint="Enter Password"
+                        android:inputType="textPassword"
+                        android:textColor="@android:color/black"
+                        android:textSize="12dp" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/cpwdLyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/usernmLyt"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/border"
+
+                    >
+
+                    <com.onlineludo.Fonts.HelveticaLightEditText
+                        android:id="@+id/cpwdEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:background="@android:color/transparent"
+                        android:hint="Enter Password"
+                        android:inputType="textPassword"
+                        android:textColor="@android:color/black"
+                        android:textSize="12dp" />
+
+                </RelativeLayout>
+
+
+
+                <com.onlineludo.Fonts.HelveticaMediumButton
+                    android:id="@+id/signupBtn"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/pwdLyt"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_border"
+                    android:text="Sign Up"
+                    android:textColor="@android:color/white"
+                    android:textSize="14dp" />
+
+
+                <com.onlineludo.Fonts.HelveticaMediumTextView
+                    android:id="@+id/signinBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Already Have an Account? Sign In"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
