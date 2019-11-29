@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/transparent">
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            />
+
+        <RelativeLayout
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:id="@+id/left_drawer"
+            android:layout_gravity="start"
+            android:background="@drawable/gradient">
+
+            <RelativeLayout
+                android:id="@+id/profile_layout"
+                android:layout_width="match_parent"
+                android:layout_height="110dp">
+
+                <com.smart.ludoclassic.RoundedImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/profile_img"
+                    android:tint="#000000"
+                    android:src="@drawable/user"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/profile_img"
+                    android:textColor="@android:color/white"
+                    android:text="Welcome"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/welcome_txt"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/profile_img"
+                    android:textColor="@android:color/white"
+                    android:text="Sarma K"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@+id/welcome_txt"
+                    />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:id="@+id/notification"
+                    android:layout_alignParentRight="true"
+                    android:visibility="gone"
+                    android:layout_marginRight="20dp"/>
+
+            </RelativeLayout>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_layout"
+                android:id="@+id/menu_listview"
+                tools:listitem="@layout/sidemenu_list_item"
+                android:choiceMode="singleChoice"
+                android:cacheColorHint="@android:color/transparent"
+                android:dividerHeight="0dp"
+                android:fadeScrollbars="false"
+                android:scrollbarSize="2dp"
+                android:divider="@null"/>
+
+
+
+        </RelativeLayout>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+</RelativeLayout>

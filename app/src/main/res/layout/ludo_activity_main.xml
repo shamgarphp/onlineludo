@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_layout"
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/header">
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:visibility="visible"
+            android:id="@+id/menuIcon"
+            android:layout_alignParentLeft="true">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/menu"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/logoview"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/appicon"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/adView"
+        android:layout_below="@+id/logoview">
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10.0dip">
+
+            <Button
+                android:id="@+id/btnLudoMultiplayer"
+                android:layout_width="0.0dip"
+                android:layout_height="60.0dip"
+                android:layout_marginRight="5.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/player4" />
+
+            <Button
+                android:id="@+id/btnLudoTwoPlayer"
+                android:layout_width="0.0dip"
+                android:layout_height="60.0dip"
+                android:layout_marginLeft="5.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/player2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll1"
+            android:orientation="horizontal"
+            android:padding="10.0dip">
+
+            <Button
+                android:id="@+id/btnLudoVsComp"
+                android:layout_width="0.0dip"
+                android:layout_height="60.0dip"
+                android:layout_marginRight="5.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/player4vscomp" />
+
+            <Button
+                android:id="@+id/btnLudoVsCompTwoPlayer"
+                android:layout_width="0.0dip"
+                android:layout_height="60.0dip"
+                android:layout_marginLeft="5.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/player2vscomp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/ad_banner">
+    </com.google.android.gms.ads.AdView>
+
+
+</RelativeLayout>

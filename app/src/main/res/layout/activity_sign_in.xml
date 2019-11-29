@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
-    tools:context=".activities.SignInActivity">
+    tools:context=".SignInActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -14,7 +14,7 @@
             android:layout_height="wrap_content">
 
 
-            <com.onlineludo.Fonts.HelveticaMediumTextView
+            <com.smart.ludoclassic.Fonts.HelveticaMediumTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
@@ -45,7 +45,7 @@
 
                     >
 
-                    <com.onlineludo.Fonts.HelveticaLightEditText
+                    <com.smart.ludoclassic.Fonts.HelveticaLightEditText
                         android:id="@+id/userEt"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -72,7 +72,7 @@
 
                     >
 
-                    <com.onlineludo.Fonts.HelveticaLightEditText
+                    <com.smart.ludoclassic.Fonts.HelveticaLightEditText
                         android:id="@+id/pwdEt"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -87,7 +87,7 @@
 
 
 
-                <com.onlineludo.Fonts.HelveticaMediumButton
+                <com.smart.ludoclassic.Fonts.HelveticaMediumButton
                     android:id="@+id/signinBtn"
                     android:layout_width="300dp"
                     android:layout_height="50dp"
@@ -100,7 +100,7 @@
                     android:textSize="14dp" />
 
 
-                <com.onlineludo.Fonts.HelveticaMediumTextView
+                <com.smart.ludoclassic.Fonts.HelveticaMediumTextView
                     android:id="@+id/signupBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
