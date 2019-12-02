@@ -21,7 +21,7 @@ import java.util.regex.Pattern;
 public class Utilites {
 
     // Singleton
-    private static Utilites sharedInstance = null;
+    public static Utilites sharedInstance = null;
 
     public Activity currentActivityDetails;
     public int menuSelectedPosition = 0;

@@ -163,6 +163,27 @@ public class SideMenuActivity extends AppCompatActivity {
                             }, handlerDuration);
 
                         break;
+                    case 1:
+                        // to close drawer before navigating
+                        handlerCloseDrawer();
+                        // intializing oldmenu position
+                        Utilites.getSharedInstance().oldmenuSelectedPosition = position;
+
+                            new Handler().postDelayed(new Runnable() {
+                                @Override
+                                public void run() {
+                                    if (!(currentActivity instanceof UserProfileActivity)) {
+                                        Intent navToHome = new Intent(currentActivity, UserProfileActivity.class);
+                                        navToHome.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                                        startActivity(navToHome);
+                                        finish();
+                                        Utilites.getSharedInstance().moveForwardTransition(currentActivity);
+                                    }
+
+                                }
+                            }, handlerDuration);
+
+                        break;
 
                     /*case 2:
                         // to close drawer before navigating
