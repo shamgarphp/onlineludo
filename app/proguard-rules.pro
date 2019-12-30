@@ -20,3 +20,6 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 
+-keepclassmembers class com.paytm.pgsdk.paytmWebView$PaytmJavaScriptInterface {
+   public *;
+}
