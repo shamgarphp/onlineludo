@@ -3,6 +3,7 @@ package com.smart.ludoclassic;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -11,6 +12,7 @@ import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -29,6 +31,8 @@ public class SideMenuActivity extends AppCompatActivity {
     int handlerDuration = 280;  // duration to navigate to other screen as menu closes.
     MenuListViewAdapter menuListViewAdapter;
     ImageView notification;
+    TextView nameTxt,mobileTxt;
+    SharedPreferences sharedpreferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,10 +51,16 @@ public class SideMenuActivity extends AppCompatActivity {
         notification = findViewById(R.id.notification);
 
         profileLayout       = findViewById(R.id.profile_layout);
+        nameTxt       = findViewById(R.id.nameTxt);
+        mobileTxt       = findViewById(R.id.mobileTxt);
 
         // to stop the opening of dlayout on swipe gesture.
         mDrawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
+        sharedpreferences = getSharedPreferences("Userdetails",
+                Context.MODE_PRIVATE);
 
+        nameTxt.setText(""+sharedpreferences.getString("username",""));
+        mobileTxt.setText(""+sharedpreferences.getString("mobile",""));
         // setting adapter to listview
         menuListViewAdapter = new MenuListViewAdapter(this,0);
         mSidemenuListview.setAdapter(menuListViewAdapter);

@@ -48,14 +48,26 @@
                     />
 
                 <TextView
+                    android:id="@+id/nameTxt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_toRightOf="@+id/profile_img"
                     android:textColor="@android:color/white"
-                    android:text="Sarma K"
+                    android:text=""
                     android:layout_marginTop="5dp"
                     android:layout_marginLeft="10dp"
                     android:layout_below="@+id/welcome_txt"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/profile_img"
+                    android:textColor="@android:color/white"
+                    android:text=""
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@+id/nameTxt"
+                    android:id="@+id/mobileTxt"
                     />
 
 
