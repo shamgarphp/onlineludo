@@ -195,7 +195,7 @@ public class SideMenuActivity extends AppCompatActivity {
 
                         break;
 
-                    /*case 2:
+                    case 2:
                         // to close drawer before navigating
                         handlerCloseDrawer();
                         Utilites.getSharedInstance().oldmenuSelectedPosition = position;
@@ -203,22 +203,68 @@ public class SideMenuActivity extends AppCompatActivity {
                               new Handler().postDelayed(new Runnable() {
                                 @Override
                                 public void run() {
-                                    if (!(currentActivity instanceof NOCMapsActivity)) {
-                                        Intent navToSync = new Intent(currentActivity, NOCMapsActivity.class);
+                                    if (!(currentActivity instanceof ChangePasswordActivity)) {
+                                        Intent navToSync = new Intent(currentActivity, ChangePasswordActivity.class);
 
-                                        if (!(currentActivity instanceof MainActivity)) {
+                                        if (!(currentActivity instanceof ChangePasswordActivity)) {
                                             navToSync.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                                             finish();
                                         }
                                         Utilites.getSharedInstance().moveForwardTransition(currentActivity);
                                         startActivity(navToSync);
                                     }
-
                                 }
                             }, handlerDuration);
 
 
-                        break;*/
+                        break;
+
+                    case 4:
+                        // to close drawer before navigating
+                        handlerCloseDrawer();
+                        Utilites.getSharedInstance().oldmenuSelectedPosition = position;
+
+                        new Handler().postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                if (!(currentActivity instanceof WalletActivity)) {
+                                    Intent navToSync = new Intent(currentActivity, WalletActivity.class);
+
+                                    if (!(currentActivity instanceof WalletActivity)) {
+                                        navToSync.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                                        finish();
+                                    }
+                                    Utilites.getSharedInstance().moveForwardTransition(currentActivity);
+                                    startActivity(navToSync);
+                                }
+                            }
+                        }, handlerDuration);
+
+
+                        break;
+                    case 5:
+                        // to close drawer before navigating
+                        handlerCloseDrawer();
+                        Utilites.getSharedInstance().oldmenuSelectedPosition = position;
+
+                        new Handler().postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                if (!(currentActivity instanceof TransactionHistoryActivity)) {
+                                    Intent navToSync = new Intent(currentActivity, TransactionHistoryActivity.class);
+
+                                    if (!(currentActivity instanceof TransactionHistoryActivity)) {
+                                        navToSync.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                                        finish();
+                                    }
+                                    Utilites.getSharedInstance().moveForwardTransition(currentActivity);
+                                    startActivity(navToSync);
+                                }
+                            }
+                        }, handlerDuration);
+
+
+                        break;
 
                     default:
                         // to close side menu

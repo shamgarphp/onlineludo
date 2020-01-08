@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <com.smart.ludoclassic.Fonts.HelveticaMediumTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/value_20"
+            android:text="Paid to Bank"
+            android:textColor="@color/black"
+            android:textSize="20dp"/>
+        <com.smart.ludoclassic.Fonts.HelveticaMediumTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/value_20"
+            android:layout_centerVertical="true"
+            android:text="-$100"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="#3e6f0f"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -36,7 +36,7 @@ public class LudoMainActivity extends SideMenuActivity {
     Button btnVsComputer;
     private AdView mAdView;
     private InterstitialAd mInterstitialAdMob;
-    private Activity currentActivity;
+    Activity currentActivity;
 
     class C03801 implements OnClickListener {
         C03801() {

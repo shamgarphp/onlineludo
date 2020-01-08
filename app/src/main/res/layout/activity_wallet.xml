@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:id="@+id/main_layout"
+    tools:context=".WalletActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#02113c"
+        android:id="@+id/header">
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:visibility="visible"
+            android:id="@+id/menuIcon"
+            android:layout_alignParentLeft="true">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/menu"/>
+
+        </RelativeLayout>
+
+        <com.smart.ludoclassic.Fonts.HelveticaMediumTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Wallet"
+            android:textSize="16dp"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#02113c"
+        android:id="@+id/amtLyt"
+        android:layout_below="@+id/header">
+
+        <com.smart.ludoclassic.Fonts.HelveticaMediumTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text=""
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:id="@+id/head"
+            android:textSize="16dp"/>
+        <com.smart.ludoclassic.Fonts.HelveticaMediumTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="Total Balance"
+            android:textColor="@color/white"
+            android:layout_below="@+id/head"
+            android:id="@+id/tot"
+            android:textSize="12dp"/>
+        <com.smart.ludoclassic.Fonts.HelveticaMediumTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="$150"
+            android:textColor="@color/white"
+            android:layout_below="@+id/tot"
+            android:id="@+id/amount"
+            android:textSize="30dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/amount">
+            <com.smart.ludoclassic.Fonts.HelveticaMediumButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_border"
+                android:textColor="@color/white"
+                android:layout_marginLeft="@dimen/value_20"
+                android:layout_marginRight="@dimen/value_20"
+                android:text="Add money"/>
+            <com.smart.ludoclassic.Fonts.HelveticaMediumButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:layout_marginLeft="@dimen/value_20"
+                android:layout_marginRight="@dimen/value_20"
+                android:background="@drawable/button_border"
+                android:text="Send money"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/transList"
+        android:layout_below="@+id/amtLyt"/>
+
+</RelativeLayout>

@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
+    android:background="#02113c"
     tools:context=".SignInActivity">
 
     <ScrollView
@@ -22,7 +22,7 @@
                 android:textSize="20dp"
                 android:id="@+id/Lable"
                 android:layout_marginTop="140dp"
-                android:textColor="@android:color/black"
+                android:textColor="@android:color/white"
                 />
 
 
@@ -108,7 +108,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="50dp"
                     android:gravity="center"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="@android:color/white"
                     />
 
             </LinearLayout>
